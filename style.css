@@ -486,16 +486,14 @@ transition-duration: 2s, 2s;
 }
 
 /* estilo de sección de contacto */
-.contact .title::after{
-    content: "Ponte en contacto";
-}
+
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
 .contact .contact-content .text{
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .contact .contact-content .left p{
     text-align: justify;
@@ -583,7 +581,7 @@ transition-duration: 2s, 2s;
 
 
 
-/* responsive media query start */
+/* inicio de consulta de medios receptivos */
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
@@ -708,4 +706,11 @@ transition-duration: 2s, 2s;
         font-size: 23px;
         line-height: 38px;
     }
+}
+@media(max-width:300px){
+    .contact .title::after{
+        width: 100%;
+        padding: auto;
+    }
+    
 }
