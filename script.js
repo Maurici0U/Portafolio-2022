@@ -55,8 +55,7 @@ $(document).ready(function(){
         autoplayHoverPause: true,
         responsive: {
             0:{
-                items: 0,
-                nav: false
+                
             
             }
         }
