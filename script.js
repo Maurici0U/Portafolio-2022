@@ -50,12 +50,13 @@ $(document).ready(function(){
     
     // guión de carrusel 
     $('.carousel').owlCarousel({
-        
+        margin: 20,
         autoplayTimeOut: 5000,
         autoplayHoverPause: true,
         responsive: {
             0:{
-                
+                items: 1,
+                nav: false
             
             }
         }
