@@ -714,3 +714,9 @@ transition-duration: 2s, 2s;
     }
     
 }
+@media(max-width:300px){
+    .owl-stage-outer{
+        width: 100%;
+        padding: auto;
+    }
+}
