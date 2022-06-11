@@ -413,6 +413,53 @@ transition-duration: 2s, 2s;
     }
 }
 /* portafolio */
+.container .heading{
+    font-size: 3rem;
+    margin: 2rem 0;
+    text-transform: capitalize;
+    color:var(--red);
+    letter-spacing: center;
+    text-shadow: 0 rgba(161, 125, 7, 0.671);
+}
+.video-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.video-container .video{
+    height: 15rem;
+    width: 25rem;
+    margin: 2rem;
+    box-shadow: 0 .5rem 1rem rgb(0,0,0,.5);
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.video-container .video video{
+height: 100%;
+width: 100%;
+object-fit: cover;
+outline: none;
+border: none;
+cursor: pointer;
+}
+.video-container .video video:hover{
+    transition: 2s linear;
+    transform: scale(1.3rem);
+}
+.video-container .video .active{
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 80%;
+    box-shadow: 0 0 0 100hv rgb(0,0,0,.7);
+    z-index: 1;
+}
+.video-container .video .active:hover{
+    transition: none    ;
+    transform: translate(-50%, -50%);
+}
 .portafolio .title::after{
     content: "Proyectos";
 
@@ -426,64 +473,7 @@ transition-duration: 2s, 2s;
     
 }
 
-.portafolio .carousel .card{
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-.portafolio .carousel .card:hover{
-    background: crimson;
-}
-.portafolio .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-.portafolio .carousel .card:hover .box{
-    transform: scale(1.05);
-}
-.portafolio .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.portafolio .carousel .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
-    transition: all 0.3s ease;
-}
-.portafolio .carousel .card:hover img{
-    border-color: #fff;
-}
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid crimson!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: crimson!important;
-}
+
 
 /* estilo de sección de contacto */
 

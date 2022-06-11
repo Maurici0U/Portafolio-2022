@@ -49,16 +49,15 @@ $(document).ready(function(){
     });
     
     // guión de carrusel 
-    $('.carousel').owlCarousel({
-        margin: 20,
-        autoplayTimeOut: 5000,
-        autoplayHoverPause: true,
-        responsive: {
-            0:{
-                items: 2,
-                nav: false
-            
-            }
+    var video =document.querySelectorAll('video')
+    video.forEach(play => play.addEventListener('click',()=>{
+        play.classList.toggle('active');
+        if(play.paused){
+            play.play();
+        }else{
+            play.pause();
+            play.currentTime = 0;
         }
+    }))
+
     });
-});
